@@ -1,0 +1,60 @@
+<template>
+  <section class="au-animate">
+    <h2>${heading}</h2>
+<div>
+	<form role="form" submit.delegate="BuildDeck()">
+		<button type="submit" class="btn btn-default">Build Deck</button>
+	</form>
+	<!--
+	<div class="card-row">
+	<div class="col-sm-6 col-md-3" repeat.for="card of cardDeck" model.bind="card">
+	  <div class="card shadow rounded">
+		  <div>${card.name} Bean</div>
+		  <div>${card.count}</div>
+		  <div>&spades;</div>
+		  <div>${card.id}</div>
+	  </div>
+	</div>
+	</div>
+	-->
+</div>
+
+<div>
+	<form role="form" submit.delegate="CreatePlayer()">
+		<div class="form-group">
+		<label for="fn">Name</label>
+		<input type="text" value.bind="playerName" class="form-control" id="fn" placeholder="Player Name">
+		<button type="submit" class="btn btn-default">Create Player</button>
+		</div>
+	</form>
+</div>
+<div class="row au-stagger">
+<div class="col-sm-6 col-md-3 au-animate" repeat.for="player of playerList" model.bind="player">
+	<div>${player.name}</div>
+	<li>Score: ${player.score}</li>
+	<li>Fields: ${player.fieldcount}</li>
+	</div>
+</div>
+
+<div>
+	<form role="form" submit.delegate="DealStartingHand()">		
+		<button type="submit" class="btn btn-default">Deal Hands</button>		
+	</form>
+	<div class="au-animate" repeat.for="player of playerList" model.bind="player">
+<div>${player.name}</div>
+		<div class="card-row">
+		<div class="card-column" repeat.for="card of player.hand" model.bind="card">
+		  <div class="card shadow rounded">
+			  <div>${card.name} Bean</div>
+			  <div>${card.count}</div>
+			  <div>&spades;</div>
+			  <div>${card.id}</div>
+		  </div>
+		</div>
+		</div>
+		</div>
+
+</div>
+
+</section>
+</template>

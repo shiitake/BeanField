@@ -1,0 +1,790 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"pl",
+				"playerList"
+			],
+			[
+				"Pl",
+				"playerList"
+			],
+			[
+				"player",
+				"playerName"
+			],
+			[
+				"D",
+				"DrawCard"
+			],
+			[
+				"play",
+				"players"
+			],
+			[
+				"card",
+				"cardDeck"
+			],
+			[
+				"Un",
+				"unshuffled"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"dis",
+				"discardCount"
+			],
+			[
+				"Ser",
+				"ServiceName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app.js",
+			"settings":
+			{
+				"buffer_size": 459,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dist/app.html",
+			"settings":
+			{
+				"buffer_size": 174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<template>\n  <section class=\"au-animate\">\n    <h2>${heading}</h2>\n<div>\n	<form role=\"form\" submit.delegate=\"BuildDeck()\">\n		<button type=\"submit\" class=\"btn btn-default\">Build Deck</button>\n	</form>\n	<!--\n	<div class=\"card-row\">\n	<div class=\"col-sm-6 col-md-3\" repeat.for=\"card of cardDeck\" model.bind=\"card\">\n	  <div class=\"card shadow rounded\">\n		  <div>${card.name} Bean</div>\n		  <div>${card.count}</div>\n		  <div>&spades;</div>\n		  <div>${card.id}</div>\n	  </div>\n	</div>\n	</div>\n	-->\n</div>\n\n<div>\n	<form role=\"form\" submit.delegate=\"CreatePlayer()\">\n		<div class=\"form-group\">\n		<label for=\"fn\">Name</label>\n		<input type=\"text\" value.bind=\"playerName\" class=\"form-control\" id=\"fn\" placeholder=\"Player Name\">\n		<button type=\"submit\" class=\"btn btn-default\">Create Player</button>\n		</div>\n	</form>\n</div>\n<div class=\"row au-stagger\">\n<div class=\"col-sm-6 col-md-3 au-animate\" repeat.for=\"player of playerList\" model.bind=\"player\">\n	<div>${player.name}</div>\n	<li>Score: ${player.score}</li>\n	<li>Fields: ${player.fieldcount}</li>\n	</div>\n</div>\n\n<div>\n	<form role=\"form\" submit.delegate=\"DealStartingHand()\">		\n		<button type=\"submit\" class=\"btn btn-default\">Deal Hands</button>		\n	</form>\n	<div class=\"au-animate\" repeat.for=\"player of playerList\" model.bind=\"player\">\n<div>${player.name}</div>\n		<div class=\"card-row\">\n		<div class=\"card-column\" repeat.for=\"card of player.hand\" model.bind=\"card\">\n		  <div class=\"card shadow rounded\">\n			  <div>${card.name} Bean</div>\n			  <div>${card.count}</div>\n			  <div>&spades;</div>\n			  <div>${card.id}</div>\n		  </div>\n		</div>\n		</div>\n		</div>\n</div>\n</section>\n</template>",
+			"file": "src/deck/deck.html",
+			"file_size": 1630,
+			"file_write_time": 130790422400000000,
+			"settings":
+			{
+				"buffer_size": 1628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{ \"message\" : \"To use the healthcheck portion of the API, use the route: /$WINDOWS_SERVICE_NAME\",\n  \"services\" : [ \"Application Experience\",\n      \"Application Host Helper Service\",\n      \"Background Intelligent Transfer Service\",\n      \"Base Filtering Engine\",\n      \"Certificate Propagation\",\n      \"ClickMotive Exporter Ford Direct deptartment phone numbers\",\n      \"ClickMotive Exporter Ford Direct Lincoln Black Label\",\n      \"ClickMotive Exporter Ford Direct SmartT\",\n      \"ClickMotive Exporter Ford Direct vehicle history\",\n      \"ClickMotive Exporter FordDirect Dealer Hours\",\n      \"ClickMotive Indexer\",\n      \"ClickMotive SendGrid API Service\",\n      \"ClickMotive.DDC.Customer.Export\",\n      \"ClickMotive.DeviceTypeTracker.Leads.Service\",\n      \"ClickMotive.LeadDelivery.Transformer.Service\",\n      \"ClickMotive.Research.VIFNotifications\",\n      \"ClickMotive.SendGrid.EmailBlockedList.Service\",\n      \"CNG Key Isolation\",\n      \"COM+ Event System\",\n      \"COM+ System Application\",\n      \"Cryptographic Services\",\n      \"DCOM Server Process Launcher\",\n      \"Desktop Window Manager Session Manager\",\n      \"DHCP Client\",\n      \"Diagnostic Policy Service\",\n      \"Distributed Link Tracking Client\",\n      \"Distributed Transaction Coordinator\",\n      \"DNS Client\",\n      \"Elasticsearch 0.90.9 (elasticsearch-service-x86)\",\n      \"Function Discovery Provider Host\",\n      \"Group Policy Client\",\n      \"IKE and AuthIP IPsec Keying Modules\",\n      \"IP Helper\",\n      \"IPsec Policy Agent\",\n      \"Microsoft Antimalware Service\",\n      \"Netlogon\",\n      \"Network Connections\",\n      \"Network List Service\",\n      \"Network Location Awareness\",\n      \"Network Store Interface Service\",\n      \"Octopus Tentacle\",\n      \"Plug and Play\",\n      \"Power\",\n      \"Print Spooler\",\n      \"Puppet Agent\",\n      \"Remote Desktop Configuration\",\n      \"Remote Desktop Services\",\n      \"Remote Desktop Services UserMode Port Redirector\",\n      \"Remote Procedure Call (RPC)\",\n      \"Remote Registry\",\n      \"REST FTP HealthCheck\",\n      \"REST Windows Service HealthCheck\",\n      \"RPC Endpoint Mapper\",\n      \"Secondary Logon\",\n      \"Security Accounts Manager\",\n      \"Server\",\n      \"Shell Hardware Detection\",\n      \"Software Protection\",\n      \"SQL Server (MSSQLSERVER)\",\n      \"SQL Server Integration Services 10.0\",\n      \"SQL Server VSS Writer\",\n      \"System Event Notification Service\",\n      \"Task Scheduler\",\n      \"TCP/IP NetBIOS Helper\",\n      \"User Profile Service\",\n      \"VMTools\",\n      \"Windows Event Log\",\n      \"Windows Firewall\",\n      \"Windows Font Cache Service\",\n      \"Windows Management Instrumentation\",\n      \"Windows Modules Installer\",\n      \"Windows Process Activation Service\",\n      \"Windows Remote Management (WS-Management)\",\n      \"Windows Time\",\n      \"Windows Update\",\n      \"Workstation\",\n      \"World Wide Web Publishing Service\"\n    ]\n}\n\n",
+			"settings":
+			{
+				"buffer_size": 2866,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "?jsoncallback=jsonp_callback_11764:1 Uncaught SyntaxError: Unexpected token :\n\nvwrg-kjsd-tswb-lofs\n\nqvnn-zrry-sqeh-ckrq\n\n20 GB\n16.384 GB\n\ncurrently using: \n16.14 GB\n\nMight try lowering max server memory to 10 GB \n(max server memory on newdev is currently set to 4608 MB)",
+			"settings":
+			{
+				"buffer_size": 270,
+				"line_ending": "Unix",
+				"name": "?jsoncallback=jsonp_callback_11764:1 Uncaught Synt"
+			}
+		},
+		{
+			"file": "src/cards/cards.html",
+			"settings":
+			{
+				"buffer_size": 715,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles/styles.css",
+			"settings":
+			{
+				"buffer_size": 2515,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/flickr.html",
+			"settings":
+			{
+				"buffer_size": 338,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/nav-bar.html",
+			"settings":
+			{
+				"buffer_size": 1124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/welcome.html",
+			"settings":
+			{
+				"buffer_size": 734,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/nav-bar.js",
+			"settings":
+			{
+				"buffer_size": 96,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/deck/deck.js",
+			"settings":
+			{
+				"buffer_size": 1927,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "packa	",
+		"selected_items":
+		[
+			[
+				"packa	",
+				"Preferences: Browse Packages"
+			],
+			[
+				"syn js	",
+				"Set Syntax: JSON"
+			],
+			[
+				"syn ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn ht	",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn 	jav	",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn 	",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn htm	",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn j",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/e002796/Git/BeanField/src",
+		"/Users/e002796/Git/BeanField/src/cards",
+		"/Users/e002796/Git/BeanField/src/deck",
+		"/Users/e002796/Git/BeanField/styles"
+	],
+	"file_history":
+	[
+		"/Users/e002796/Downloads/Hassett Lincoln lead in question.csv",
+		"/Users/e002796/Git/BeanField/src/app.js",
+		"/Users/e002796/Git/BeanField/src/nav-bar.js",
+		"/Users/e002796/Git/BeanField/styles/styles.css",
+		"/Users/e002796/Git/BeanField/package.json",
+		"/Users/e002796/Git/skeleton-navigation/src/welcome.html",
+		"/Users/e002796/Git/skeleton-navigation/src/cards/deck.js",
+		"/Users/e002796/Git/skeleton-navigation/src/cards/deck.html",
+		"/Users/e002796/Git/skeleton-navigation/index.html",
+		"/Users/e002796/Git/skeleton-navigation/src/app.html",
+		"/Users/e002796/Git/skeleton-navigation/src/flickr.html",
+		"/Users/e002796/Git/skeleton-navigation/src/app.js",
+		"/Users/e002796/Git/BeanField/index.html",
+		"/Users/e002796/Git/BeanField/src/app.html",
+		"/Users/e002796/Git/BeanField/config.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".row",
+			"row",
+			"><"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			">\\n<"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dist/app.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/deck/deck.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1605,
+								1605
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 192.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2865,
+								2865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"auto_name": "?jsoncallback=jsonp_callback_11764:1 Uncaught Synt",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/cards/cards.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "styles/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1739,
+								1739
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "src/flickr.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/nav-bar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/welcome.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/nav-bar.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/deck/deck.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								569,
+								570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 191.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.61993280258,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "BeanField.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
